@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- ikon-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Santri</title>
+	</head>
+	<body class="d-flex">
+		<div
+			class="sidebar position-sticky top-0 start-0 bottom-0 overflow-hidden"
+		>
+			<div class="logo"></div>
+
+			<ul class="menu position-relative p-0">
+				<li class="">
+					<a
+						href="../index.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-tachometer-alt-fast"></i>
+						<span class="overflow-hidden">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="#"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-user"></i>
+						<span class="overflow-hidden">Santri</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="kamar.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-bed"></i>
+						<span class="overflow-hidden">Room</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="tagihan.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-money-bill"></i>
+						<span class="overflow-hidden">Bill</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="riwayat.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-clock-rotate-left"></i>
+						<span class="overflow-hidden">History</span>
+					</a>
+				</li>
+				<li class="logout position-absolute bottom-0 w-100">
+					<a
+						href="logout.html"
+						class="text-decoration-none d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-arrow-right-from-bracket"></i>
+						<span class="overflow-hidden">Log Out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main-content w-100 position-relative">
+			<div
+				class="header d-flex justify-content-between align-items-center flex-wrap"
+			>
+				<div class="title fs-6">
+					<span>Main</span>
+					<h2 class="">Santri</h2>
+				</div>
+				<div class="profile d-flex align-items-center gap-3">
+					<div class="search-box d-flex align-items-center">
+						<i class="icon fa-solid fa-magnifying-glass"></i>
+						<input type="text" placeholder="Search" name="" id="" />
+					</div>
+					<img src="../image/pain.png" alt="" class="" />
+				</div>
+			</div>
+			<table class="table align-middle mb-0 bg-white">
+				<thead class="bg-light">
+					<tr>
+						<th>Name</th>
+						<th>Title</th>
+						<th>Status</th>
+						<th>Grade</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									alt=""
+									style="width: 45px; height: 45px"
+									class="rounded-circle"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										john.doe@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Software engineer</p>
+							<p class="text-muted mb-0">IT department</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-success rounded-pill d-inline"
+								>Active</span
+							>
+						</td>
+						<td>Senior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-sm btn-rounded"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									class="rounded-circle"
+									alt=""
+									style="width: 45px; height: 45px"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										alex.ray@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Consultant</p>
+							<p class="text-muted mb-0">Finance</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-primary rounded-pill d-inline"
+								>Onboarding</span
+							>
+						</td>
+						<td>Junior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-rounded btn-sm fw-bold"
+								data-mdb-ripple-color="dark"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									class="rounded-circle"
+									alt=""
+									style="width: 45px; height: 45px"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										blackman@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Designer</p>
+							<p class="text-muted mb-0">UI/UX</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-warning rounded-pill d-inline"
+								>Awaiting</span
+							>
+						</td>
+						<td>Senior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-rounded btn-sm fw-bold"
+								data-mdb-ripple-color="dark"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									class="rounded-circle"
+									alt=""
+									style="width: 45px; height: 45px"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										blackman@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Designer</p>
+							<p class="text-muted mb-0">UI/UX</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-warning rounded-pill d-inline"
+								>Awaiting</span
+							>
+						</td>
+						<td>Senior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-rounded btn-sm fw-bold"
+								data-mdb-ripple-color="dark"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									class="rounded-circle"
+									alt=""
+									style="width: 45px; height: 45px"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										blackman@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Designer</p>
+							<p class="text-muted mb-0">UI/UX</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-warning rounded-pill d-inline"
+								>Awaiting</span
+							>
+						</td>
+						<td>Senior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-rounded btn-sm fw-bold"
+								data-mdb-ripple-color="dark"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img
+									src="../image/pain.png"
+									class="rounded-circle"
+									alt=""
+									style="width: 45px; height: 45px"
+								/>
+								<div class="ms-3">
+									<p class="fw-bold mb-1">jebakan kera</p>
+									<p class="text-muted mb-0">
+										blackman@gmail.com
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="fw-normal mb-1">Designer</p>
+							<p class="text-muted mb-0">UI/UX</p>
+						</td>
+						<td>
+							<span
+								class="badge badge-warning rounded-pill d-inline"
+								>Awaiting</span
+							>
+						</td>
+						<td>Senior</td>
+						<td>
+							<button
+								type="button"
+								class="btn btn-link btn-rounded btn-sm fw-bold"
+								data-mdb-ripple-color="dark"
+							>
+								Edit
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    --></body>
+</html>

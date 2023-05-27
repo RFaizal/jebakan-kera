@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+
+		<!-- ikon-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- boostrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="d-flex">
+		<!-- sidebar -->
+		<div
+			class="sidebar position-sticky top-0 start-0 bottom-0 overflow-hidden"
+		>
+			<div class="logo"></div>
+
+			<ul class="menu position-relative p-0">
+				<li class="">
+					<a
+						href="#"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-tachometer-alt-fast"></i>
+						<span class="overflow-hidden">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="pages/santri.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-user"></i>
+						<span class="overflow-hidden">Santri</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="pages/kamar.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-bed"></i>
+						<span class="overflow-hidden">Room</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="pages/tagihan.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-money-bill"></i>
+						<span class="overflow-hidden">Bill</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="pages/riwayat.html"
+						class="text-decoration-none fs-6 d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-clock-rotate-left"></i>
+						<span class="overflow-hidden">History</span>
+					</a>
+				</li>
+				<li class="logout position-absolute bottom-0 w-100">
+					<a
+						href="pages/logout.html"
+						class="text-decoration-none d-flex align-items-center gap-3"
+					>
+						<i class="fas fa-arrow-right-from-bracket"></i>
+						<span class="overflow-hidden">Log Out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- topbar -->
+		<div class="main-content w-100 position-relative">
+			<div
+				class="header d-flex justify-content-between align-items-center flex-wrap"
+			>
+				<div class="title fs-6">
+					<span>Main</span>
+					<h2 class="">Dashboard</h2>
+				</div>
+				<div class="profile d-flex align-items-center gap-3">
+					<div class="search-box d-flex align-items-center">
+						<i class="icon fa-solid fa-magnifying-glass"></i>
+						<input type="text" placeholder="Search" name="" id="" />
+					</div>
+					<img src="image/pain.png" alt="" class="" />
+				</div>
+			</div>
+
+			<!-- insight -->
+			<div class="insight-container">
+				<h3 class="insight-title">Today's Data</h3>
+				<div class="wrapper d-flex flex-wrap gap-3">
+					<div
+						class="insight d-flex flex-column justify-content-between"
+					>
+						<div class="saldo">
+							<div
+								class="insight-header d-flex justify-content-between align-items-center"
+							>
+								<div class="amount d-flex flex-column">
+									<span class="amount-title"> SPP </span>
+									<span class="value fs-3">$6969</span>
+								</div>
+								<i class="icon fa-solid fa-dollar-sign"></i>
+							</div>
+						</div>
+					</div>
+					<div
+						class="insight d-flex flex-column justify-content-between"
+					>
+						<div class="saldo">
+							<div
+								class="insight-header d-flex justify-content-between align-items-center"
+							>
+								<div class="amount d-flex flex-column">
+									<span class="amount-title"> Non SPP </span>
+									<span class="value fs-3">$6969</span>
+								</div>
+								<i
+									class="icon fa-solid fa-filter-circle-dollar"
+								></i>
+							</div>
+						</div>
+					</div>
+					<div
+						class="insight d-flex flex-column justify-content-between"
+					>
+						<div class="saldo">
+							<div
+								class="insight-header d-flex justify-content-between align-items-center"
+							>
+								<div class="amount d-flex flex-column">
+									<span class="amount-title"> Income </span>
+									<span class="value fs-3">$6969</span>
+								</div>
+								<i class="icon fa-solid fa-sack-dollar"></i>
+							</div>
+						</div>
+					</div>
+					<div
+						class="insight d-flex flex-column justify-content-between"
+					>
+						<div class="saldo">
+							<div
+								class="insight-header d-flex justify-content-between align-items-center"
+							>
+								<div class="amount d-flex flex-column">
+									<span class="amount-title"> Outcome </span>
+									<span class="value fs-3">$6969</span>
+								</div>
+								<i class="icon fa-solid fa-sack-xmark"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
